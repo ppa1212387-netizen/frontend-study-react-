@@ -1,0 +1,10 @@
+비동기 기능 (콜백함수)
+setTimeout
+promise - reserve, 우선순위로 작동됨
+fetch 함수 (내부적으로 promise를 리턴하는 형태로 구현 됨 -> 오류없음 reserve로)
+async/await - 직관적이기 때문에 가독성 높고 유지관리 용이
+
+Axios - 리액트 API 라이브러리
+Spread Operator
+    const { id, ...taskDataWithoutId } = task; //..추가할떄 말고 나눌때도 쓴다. (특정 속성 제거)
+    const apiData = toApiFormat(taskDataWithoutId); // id 제외한 나머지 생성
