@@ -1,0 +1,62 @@
+✅ React Core Concepts (요약)
+1. UI와 데이터
+
+컴포넌트 & JSX
+UI를 반환하는 함수형 컴포넌트 사용, JSX는 React.createElement로 변환됨
+
+Props
+부모 → 자식으로 내려가는 읽기 전용 데이터 (단방향 흐름)
+
+State
+컴포넌트 내부 상태, 변경 시 자동 리렌더링
+
+2. Hooks
+
+useState: 상태 관리
+useEffect: API 호출, 구독 등 사이드 이펙트 처리
+useRef: 리렌더링 없이 값 유지 / DOM 접근
+Context: 전역 상태 공유, Prop Drilling 해결
+
+3. 컴포넌트 설계
+
+제어 컴포넌트: 입력값을 state로 관리 (Single Source of Truth)
+로직 분리: Custom Hook으로 UI와 로직 분리
+순수 컴포넌트: 같은 입력 → 같은 JSX 출력
+
+4. 고급 기능
+
+Portals: 모달·툴팁을 DOM 외부에 렌더링
+Suspense: 로딩 중 대체 UI 표시
+Error Boundary: 하위 컴포넌트 에러 처리
+
+✅ TypeScript 핵심 정리
+1. 개요
+
+JavaScript + 타입 언어 (Superset)
+컴파일을 통해 JS로 변환됨
+에러 사전 방지 & 자동 완성 제공
+
+2. 기본 타입
+
+기본: string, number, boolean, array, object
+특수:
+Tuple: 고정 길이 배열
+Enum: 상수 집합
+Any: 모든 타입 허용
+Void: 반환값 없음
+
+3. Interface & Class
+
+Interface: 객체 구조 정의, 확장 가능
+Class: 타입 + 접근 제어자(public, private, protected)
+
+4. 고급 타입
+
+Union (|): 여러 타입 중 하나
+Intersection (&): 여러 타입 결합
+Generic: 재사용 가능한 타입 설계
+
+5. 기타
+
+Utility Types: Partial, Pick, Omit 등
+tsconfig.json: 컴파일 옵션 설정
