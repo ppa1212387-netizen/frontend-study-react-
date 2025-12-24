@@ -1,10 +1,25 @@
-비동기 기능 (콜백함수)
-setTimeout
-promise - reserve, 우선순위로 작동됨
-fetch 함수 (내부적으로 promise를 리턴하는 형태로 구현 됨 -> 오류없음 reserve로)
-async/await - 직관적이기 때문에 가독성 높고 유지관리 용이
+React / JavaScript 비동기 & 유용 기능 정리
 
-Axios - 리액트 API 라이브러리
-Spread Operator
-    const { id, ...taskDataWithoutId } = task; //..추가할떄 말고 나눌때도 쓴다. (특정 속성 제거)
-    const apiData = toApiFormat(taskDataWithoutId); // id 제외한 나머지 생성
+비동기 처리 (Callback, Promise, async/await) : 
+· setTimeout: 일정 시간 후 함수 실행
+· Promise: 우선순위에 따라 처리되는 비동기 객체
+· fetch: 내부적으로 Promise를 반환하는 함수 → 오류 처리도 Promise 방식으로 가능
+· async / await: Promise보다 직관적이고, 가독성이 높아 유지보수에 용이
+
+Axios :
+· React에서 API 호출을 쉽게 할 수 있는 라이브러리
+· fetch와 비슷하지만, 편리한 기능(자동 JSON 변환, 요청 취소 등) 제공
+
+Spread Operator (...)
+객체의 특정 속성을 제외하거나 나눌 때 유용
+
+ex)
+const { id, ...taskDataWithoutId } = task; 
+// id를 제외하고 나머지 데이터를 분리
+
+const apiData = toApiFormat(taskDataWithoutId); 
+// API에 맞게 id 제외한 나머지 데이터 변환
+
+-> 활용 포인트
+특정 속성을 제외하고 API 요청할 때
+새로운 객체를 만들 때 기존 객체를 복사하며 일부만 수정할 때
