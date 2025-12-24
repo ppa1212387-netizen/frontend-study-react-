@@ -1,16 +1,29 @@
-StrictMode 
-- 개발모드, 
+React / 라우팅 & 상태 관리 정리
 
-outlet 동일한 url 아래로 사용할수 있다
+StrictMode : 
+· 개발 모드에서만 활성화
+· React 앱에서 잠재적 문제를 미리 확인할 수 있도록 도와줌
 
-usestate - state 일반적인 개발상황에서 변수와 동일
-useNavigate - router 라이브러리가 제공하는 기능중 하나로 깜빡임 없이 화면 전환(리액트는 한페이지 때문에)
+Outlet : 동일한 URL 아래에서 중첩된 라우트를 렌더링할 때 사용
 
-userAuth 커스텀 훅
-context 개념 별도의 context 메모리 공간에 필요한 데이터들 저장
-그때그때 사용할수 있도록
-provider 정의 
+useState : 일반적인 상태 관리용 훅. 변수처럼 값을 저장하고, 변경 시 컴포넌트 리렌더링
 
-register.jsx
+useNavigate : React Router 라이브러리에서 제공, 페이지 전환 시 깜빡임 없이 화면 이동 가능
+
+
+
+커스텀 훅 & Context
+
+useAuth (예: userAuth 커스텀 훅) : 사용자 인증 관련 상태와 기능을 재사용 가능하게 묶어서 제공
+
+Context : 
+· 별도의 메모리 공간에 데이터를 저장하고, 필요한 곳에서 사용 가능
+· Provider를 통해 하위 컴포넌트에서 접근 가능
+
+// 예시: 회원가입 후 대시보드 이동
 navigate('/dashboard', { replace: true }); 
-없으면 뒤로 가기 했을때 /register(바로전) 돌아감
+// replace가 없으면 뒤로 가기 했을 때 /register 페이지로 돌아감
+
+-> 활용 포인트
+페이지 전환 제어
+로그인 상태나 전역 상태 관리
