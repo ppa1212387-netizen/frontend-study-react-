@@ -1,4 +1,6 @@
-✅ React Core Concepts (요약)
+React Core Concepts (요약)
+
+
 1. UI와 데이터
 
 컴포넌트 & JSX
@@ -29,7 +31,11 @@ Portals: 모달·툴팁을 DOM 외부에 렌더링
 Suspense: 로딩 중 대체 UI 표시
 Error Boundary: 하위 컴포넌트 에러 처리
 
-✅ TypeScript 핵심 정리
+
+TypeScript 핵심 정리
+
+
+
 1. 개요
 
 JavaScript + 타입 언어 (Superset)
