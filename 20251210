@@ -1,4 +1,58 @@
-- Router
-Link, 
-NavLink 해당링크에 들어와있으면 
+React Router 요약
+
+
+React Router란?
+
+React 애플리케이션에서 클라이언트 사이드 라우팅을 구현하는 표준 라이브러리
+SPA 환경에서 URL 변경에 따라 다른 컴포넌트를 렌더링한다.
+
+
+사용하는 이유
+- URL 기반 페이지 전환
+- 북마크 & 링크 공유 (Deep Linking)
+- 뒤로가기 / 앞으로가기 지원
+- 새로고침 시 화면 유지
+
+
+설치
+npm install react-router-dom
+# or
+pnpm add react-router-dom
+
+
+기본 사용법
+<BrowserRouter>
+  <Routes>
+    <Route path="/" element={<Home />} />
+    <Route path="/about" element={<About />} />
+  </Routes>
+</BrowserRouter>
+
+
+핵심 컴포넌트
+BrowserRouter: 앱 최상위 라우터
+Routes / Route: URL ↔ 컴포넌트 매핑
+Link: 새로고침 없는 페이지 이동
+NavLink: 현재 경로인지 아닌지를 판단해서 스타일을 자동으로 바꿔주는 Link(기본 동작은 Link와 동일)
+
+
+3가지 라우팅 방식
+1. Declarative Routing 
+: JSX로 라우트 선언 / 컴포넌트 렌더링 후 데이터 요청
+2. Data Routing (실무 핵심) 
+: 라우터가 렌더링 전 데이터 로딩 / loader, useLoaderData, errorElement 제공 / 빠른 UX (Render-as-you-fetch)
+3. Framework Routing (v7 / Remix) 
+: SSR , SSG 지원 /SEO, 초기 로딩 성능 중요할 때 사용
+
+
+주요 Hooks
+
+useLoaderData() : loader 데이터 사용
+useNavigate() : 페이지 이동
+useParams() : URL 파라미터
+
+
+한 줄 요약
+
+React Router는 SPA에서도 URL 중심의 네비게이션과 좋은 UX를 제공하는 필수 라이브러리이다.
 
