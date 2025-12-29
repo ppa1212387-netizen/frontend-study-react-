@@ -63,7 +63,9 @@ Context API
 코드 간결, 구조 명확
 
 Context API로 전역 인증 상태 관리
-step1 Context생성 (Create), step2 범위 지정 및 값 공급(Provide), step3 데이터 사용(Consume)
+step1 Context생성 (Create), 
+step2 범위 지정 및 값 공급(Provide), 
+step3 데이터 사용(Consume)
 
 
 JWT 인증 기반 라우트 보호
@@ -84,8 +86,6 @@ Client → localStorage 저장 (실무: HttpOnly Cookie 권장)
 보호된 라우트 개념
 
 AuthContext에서 토큰 유무 확인, 인증되지 않으면 접근 차단
-
-
 
 
 
