@@ -3,7 +3,10 @@ Wappalyzer - 브라우저 확장 프로그램
 웹사이트가 사용하는 CMS(WordPress 등), 프레임워크(React, Angular), 서버, 분석툴, 라이브러리 등 기술 스택을 식별해
 https://chromewebstore.google.com/detail/wappalyzer-technology-pro/gppongmhjkpfnbhagpmjfkannfbllamg?hl=ko&pli=1
 
-📘 TypeScript & 마이그레이션 핵심 요약
+
+
+· TypeScript & 마이그레이션 핵심 요약
+
 1. TypeScript 도입 이유
 
 안정성: 정적 타입 검사로 실행 전 버그 예방
