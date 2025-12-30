@@ -1,0 +1,110 @@
+# 📚 React · JavaScript · REST API 학습 자료 정리
+
+강사님이 Slack으로 공유해주신 링크와 실습 자료를  
+**주제별로 정리한 학습 가이드**입니다.
+
+---
+
+## 📘 1. JavaScript 기초 문법
+
+JavaScript 기본 문법과 핵심 개념 학습용 자료입니다.
+
+- **Learn JavaScript (인터랙티브 튜토리얼)**  
+  https://learn-js.org/
+
+- **W3Schools JavaScript**  
+  https://www.w3schools.com/js/js_intro.asp
+
+- **PoiemaWeb – JavaScript 문법 기초**  
+  https://poiemaweb.com/js-syntax-basics
+
+- **MDN – encodeURIComponent**  
+  https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent
+
+---
+
+## 🧠 2. 코딩 테스트 연습
+
+- **프로그래머스 코딩테스트 연습**  
+  https://programmers.co.kr/learn/challenges
+
+---
+
+## ⚛️ 3. React 학습 자료
+
+- **React 공식 문서 (한글)**  
+  https://ko.react.dev/
+
+- **React Quick Start**  
+  https://react.dev/learn
+
+- **React 개발자 도구**  
+  https://ko.react.dev/learn/react-developer-tools
+
+- **React 강의 실습 GitHub**  
+  https://github.com/agnes-lec/react-lecture
+
+---
+
+## 🟦 4. TypeScript
+
+- **TypeScript 공식 핸드북 (한글)**  
+  https://www.typescriptlang.org/ko/docs/handbook/intro.html
+
+---
+
+## 🌐 5. REST API & Swagger
+
+- **Swagger UI (API 테스트)**  
+  http://13.220.93.143:8080/swagger-ui/index.html
+
+- **API Base URL**
+```js
+API_BASE_URL = "https://13.220.93.143:8080/api/tasks";
+
+
+🧩 6. Next.js & 서버리스 API
+Next.js 프로젝트 생성
+pnpm create next-app nextjs-basic --typescript --eslint --app --src-dir --import-alias "@/*" --no-tailwind --yes
+
+REST API 테스트 (curl)
+curl -X POST http://localhost:3000/api/todos \
+-H "Content-Type: application/json" \
+-d "{\"title\": \"새 할일\"}"
+
+curl -X PUT http://localhost:3000/api/todos/1 \
+-H "Content-Type: application/json" \
+-d "{\"completed\": true}"
+
+🛢️ 7. Prisma (ORM / DB)
+
+Prisma Schema 문서
+https://pris.ly/d/prisma-schema
+
+Prisma CRUD 공식 문서
+https://www.prisma.io/docs/orm/prisma-client/queries/crud#read
+
+Prisma 버전 고정 설치
+pnpm remove prisma @prisma/client
+pnpm add -D prisma@5.22.0
+pnpm add @prisma/client@5.22.0
+pnpm prisma generate
+
+🎨 8. CSS / UI
+
+Tailwind CSS 공식 사이트
+https://tailwindcss.com/
+
+🤖 9. AI / 고급 참고 자료 (선택)
+
+RAG 기반 매출 조회 시스템
+https://claude.ai/share/f7597791-bb57-4044-b334-d7260c7ef2a9
+
+Spring Boot MCP + Oracle 연동
+https://claude.ai/share/bb3ef69b-1aa9-4b97-ae30-9f35df052a83
+
+LangChain 가이드
+https://claude.ai/share/66ce1948-98f5-4a98-8d33-a93ed55f9696
+
+LangGraph 가이드
+https://claude.ai/share/b5a2c892-79f6-46bd-b7f7-f1da3fe50035
